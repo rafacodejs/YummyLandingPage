@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+  nav .nav-bar .sidebarOpen {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    height: 100%;
+    width: 320px;
+    left: -120%;
+    top: 0;
+    padding: 20px;
+    background-color: var(--side-nav);
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  nav.active .menu {
+    left: 0%;
+  }
+
+  nav.active .nav-bar .navLogo a {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu .logo-toggle {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-toggle .logo a img {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    width: 135px;
+    height: 65px;
+  }
+  .logo-toggle .siderbarClose {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-bar .nav-links {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .nav-links li a {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+  }
+}
