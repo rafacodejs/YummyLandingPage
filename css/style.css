@@ -66,6 +66,7 @@ nav-bar .logo a {
   position: relative;
   top: 20px;
 }
+
 nav .nav-bar .logo a img {
   position: relative;
   top: 5px;
@@ -96,7 +97,7 @@ nav .nav-bar .logo a img {
 
 .nav-links li a {
   position: relative;
-  font-size: 15px;
+  font-size: clamp(0.4rem, 0.4vw + 0.6rem, 1rem);
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
@@ -189,4 +190,57 @@ nav .nav-bar .logo a img {
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
+}
+.first-section__container {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr 1fr));
+  margin: 0 auto;
+  place-items: center;
+}
+.first-section__title {
+  grid-area: 1 / 1;
+  margin-bottom: 10vh;
+}
+
+.first-section__title h1 {
+  width: 75%;
+  font-size: clamp(0.8rem, 1.2vw + 1.2rem, 2.2rem);
+}
+.first-section__title span {
+  color: var(--side-nav);
+}
+.first-section__title p {
+  margin-top: 5vh;
+  font-size: clamp(0.5rem, 0.6vw + 0.6rem, 1.1rem);
+  width: 85%;
+}
+.first-section__title h3 {
+  margin-top: 3vh;
+  font-size: clamp(0.5rem, 0.6vw + 0.6rem, 1.1rem);
+}
+.first-section__image {
+  grid-area: 1 / 2;
+  max-width: 100%;
+  min-width: 80%;
+}
+.first-section__image img {
+  width: 100%;
+}
+.button-section {
+  display: flex;
+  flex-direction: row;
+}
+.apple-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+
+button img {
+  width: 18%;
+  height: 18%;
 }

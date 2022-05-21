@@ -1,4 +1,17 @@
-@media (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .first-section__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .first-section__image img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
   nav .nav-bar .sidebarOpen {
     display: block;
   }
@@ -34,8 +47,8 @@
     position: relative;
     margin: 0 auto;
     width: 100%;
-    width: 135px;
-    height: 65px;
+    width: 125px;
+    height: 60px;
   }
   .logo-toggle .siderbarClose {
     color: #fff;
@@ -50,7 +63,11 @@
 
   .nav-links li a {
     display: block;
+    font-size: 0.9rem;
     margin-top: 20px;
+    color: #fff;
+  }
+  .nav__link:hover {
     color: #fff;
   }
 }
