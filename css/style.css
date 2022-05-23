@@ -228,19 +228,81 @@ nav .nav-bar .logo a img {
   width: 100%;
 }
 .button-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 5vh;
+}
+.apple-button {
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
 }
-.apple-button {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+.google-button {
+  width: 34%;
+  height: auto;
   background-color: #fff;
   border: 2px solid #333;
-  border-radius: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
 }
-
-button img {
+.apple-button a,
+.google-button a {
+  width: 100%;
+  text-decoration: none;
+}
+.button-info {
+  display: flex;
+  flex-direction: row;
+}
+.apple-button img {
+  width: 19%;
+  height: 24%;
+  margin: 12px auto;
+  margin-left: 0.9vw;
+}
+.google-button img {
   width: 18%;
-  height: 18%;
+  height: 24%;
+  margin: 12px auto;
+  margin-left: 0.7vw;
+}
+.button-text_apple {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  line-height: 0;
+  margin: 20px auto;
+  margin-right: 15px;
+}
+.button-text_google {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  width: 100%;
+  line-height: 0;
+  margin: 20px auto;
+  margin-right: 25px;
+}
+.button-text_apple h4 {
+  font-weight: 400;
+  font-size: clamp(0.2rem, 0.4vw + 0.4rem, 0.8rem);
+}
+.button-text_google h4 {
+  margin-left: -3vw;
+  font-weight: 400;
+  font-size: clamp(0.2rem, 0.4vw + 0.4rem, 0.8rem);
+}
+.button-text_apple h3,
+.button-text_google h3 {
+  font-weight: 600;
+  font-size: clamp(0.2rem, 0.6vw + 0.6rem, 1.4rem);
 }
