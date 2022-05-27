@@ -18,7 +18,7 @@
     width: 70%;
     height: 70%;
     position: relative;
-    top: -5px;
+    top: -6px;
   }
   .google-button img {
     width: 80%;
@@ -29,6 +29,13 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  nav .nav-bar .logo a img {
+    position: relative;
+    left: 15px;
+  }
+  .darkLight-searchBox .dark-light {
+    justify-content: end;
+  }
   .first-section__container {
     display: flex;
     flex-direction: column-reverse;
@@ -105,5 +112,15 @@
   }
   .nav__link:hover {
     color: #fff;
+  }
+  .cards {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-45%, 5%);
+  }
+  .first-section__title h1 {
+    width: 100%;
+    font-size: clamp(0.8rem, 1.5vw + 2rem, 3rem);
   }
 }
