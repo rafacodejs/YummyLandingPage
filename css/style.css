@@ -20,6 +20,9 @@ body {
   padding-top: 100px;
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+}
 body.dark {
   --body-color: #1f1b24;
   --nav-color: #1f1b24;
@@ -473,4 +476,108 @@ body.dark .second-section__cards h3 {
 .card:hover .card__content {
   opacity: 1;
   transition-delay: 0.75s;
+}
+.second-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20vh;
+}
+.second-text h3 {
+  font-size: clamp(0.6rem, 0.7vw + 0.7rem, 1.2rem);
+}
+body.dark .second-text h3 {
+  color: #fff;
+}
+.second-text button {
+  background-color: #3cb077;
+  width: 160px;
+  height: 50px;
+  margin-top: 5vh;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.56);
+}
+.second-text button a {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.second-text button:hover {
+  background: var(--side-nav);
+}
+.third-section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.third-section__bd {
+  background-color: #3cb077;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  place-content: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 350px;
+  border-radius: 2rem;
+}
+.third-section__text {
+  grid-area: 1 / 1;
+  position: relative;
+  left: 50px;
+}
+.third-section__text h2 {
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3vh;
+}
+.third-section__text p {
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 3vh;
+}
+
+.send__direction {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.send__input {
+  width: 70%;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.send__input::placeholder {
+  font-weight: 400;
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 1.4rem);
+}
+.button {
+  display: inline-block;
+  background-color: var(--side-nav);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.third-section__image {
+  grid-area: 1 /2;
+}
+.third-section__image img {
+  width: 380px;
+  height: 380px;
 }

@@ -52,6 +52,39 @@
   .apple-button img {
     margin-left: 1.8vw;
   }
+  .third-section__bd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .third-section__text h2 {
+    font-size: clamp(0.8rem, 0.8vw + 0.8rem, 1.4rem);
+    position: relative;
+    bottom: 0vh;
+  }
+  .third-section__text {
+    top: 30px;
+    left: 0px;
+    text-align: center;
+  }
+  .third-section__text p {
+    color: #fff;
+    font-size: clamp(0.6rem, 0.6vw + 0.6rem, 1rem);
+    position: relative;
+    bottom: 0vh;
+  }
+  .send__direction {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .third-section__image {
+    margin-top: 15px;
+  }
+  .third-section__image img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -122,5 +155,24 @@
   .first-section__title h1 {
     width: 100%;
     font-size: clamp(0.8rem, 1.5vw + 2rem, 3rem);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .third-section__bd {
+    width: 90%;
+    height: auto;
+  }
+  .third-section__text h2 {
+    font-size: 1.6rem;
+  }
+  .third-section__text p {
+    font-size: 1rem;
+  }
+  .third-section__image img {
+    width: 280px;
+    height: 280px;
+  }
+  .send__direction {
+    width: 70%;
   }
 }
