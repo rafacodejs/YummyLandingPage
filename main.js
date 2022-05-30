@@ -66,7 +66,10 @@ sr.reveal(
   .first-section__title,
   .first-section__image, 
   .second-section,
-  .third-section__text`,
+  .third-section__text
+  .footer-container,
+  .social-media,
+  .logo-footer`,
   {
     origin: "top",
     interval: 300,
@@ -91,13 +94,5 @@ sr.reveal(
   `,
   {
     origin: "right",
-  }
-);
-sr.reveal(
-  `.footer-container,
-  .social-media,
-  .logo-footer`,
-  {
-    origin: "bottom",
   }
 );
