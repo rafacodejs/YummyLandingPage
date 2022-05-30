@@ -66,13 +66,10 @@ sr.reveal(
   .first-section__title,
   .first-section__image, 
   .second-section,
-  .third-section__text
-  .footer-container,
-  .social-media,
-  .logo-footer`,
+  .third-section__text`,
   {
     origin: "top",
-    interval: 300,
+    interval: 200,
   }
 );
 
@@ -81,7 +78,10 @@ sr.reveal(
   .second-text,
   .second-section__cards,
   .third-section__image, 
-  .four-section__image`,
+  .four-section__image
+  .footer-container,
+  .social-media,
+  .logo-footer`,
   {
     origin: "left",
   }
