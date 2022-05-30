@@ -52,3 +52,52 @@ function scrollTop() {
   else scrollTop.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollTop);
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+
+const sr = ScrollReveal({
+  distance: "30px",
+  duration: 1800,
+  reset: true,
+});
+
+sr.reveal(
+  `first-section__container, 
+  .first-section__title,
+  .first-section__image, 
+  .second-section,
+  .third-section__text`,
+  {
+    origin: "top",
+    interval: 300,
+  }
+);
+
+sr.reveal(
+  `.button-section,
+  .second-text,
+  .second-section__cards,
+  .third-section__image, 
+  .four-section__image`,
+  {
+    origin: "left",
+  }
+);
+
+sr.reveal(
+  `.third-section, 
+  .four-section,
+  .four-section__text 
+  `,
+  {
+    origin: "right",
+  }
+);
+sr.reveal(
+  `.footer-container,
+  .social-media,
+  .logo-footer`,
+  {
+    origin: "bottom",
+  }
+);

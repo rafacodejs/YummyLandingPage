@@ -59,8 +59,8 @@ header nav .nav-bar {
   justify-content: space-between;
 }
 nav .nav-bar .sidebarOpen {
-  color: var(--text-color);
-  background-color: #7d5ecb;
+  color: var(--text-color-dark);
+  background-color: var(--side-nav);
   border-radius: 5px;
   font-size: 25px;
   padding: 5px;
