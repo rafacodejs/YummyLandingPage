@@ -27,6 +27,20 @@
     top: -7px;
     left: 3px;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo-footer img {
+    position: relative;
+    left: 0;
+  }
+  .footer-container p {
+    right: 0;
+    width: 31%;
+    
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   nav .nav-bar .logo a img {
@@ -55,35 +69,58 @@
   .third-section__bd {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
 
   .third-section__text h2 {
-    font-size: clamp(0.8rem, 0.8vw + 0.8rem, 1.4rem);
+    font-size: clamp(1rem, 1vw + 1rem, 1.8rem);
     position: relative;
     bottom: 0vh;
+    top: 5px;
   }
   .third-section__text {
-    top: 30px;
     left: 0px;
     text-align: center;
   }
   .third-section__text p {
     color: #fff;
-    font-size: clamp(0.6rem, 0.6vw + 0.6rem, 1rem);
+    font-size: clamp(0.7rem, 0.7vw + 0.7rem, 1rem);
     position: relative;
     bottom: 0vh;
+    top: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
   .send__direction {
     display: flex;
     margin: 0 auto;
+    width: 90%;
+    margin-top: 25px;
+  }
+  .send__input {
     width: 80%;
   }
   .third-section__image {
-    margin-top: 15px;
+    margin-bottom: -50px;
   }
   .third-section__image img {
     width: 200px;
     height: 200px;
+  }
+  .four-section__container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .four-section__text p {
+    width: 100%;
+  }
+  .logo-footer img {
+    width: 100px;
+    height: 40px;
+  }
+  .social-media img {
+    width: 30px;
   }
 }
 
@@ -173,6 +210,6 @@
     height: 280px;
   }
   .send__direction {
-    width: 70%;
+    width: 80%;
   }
 }
