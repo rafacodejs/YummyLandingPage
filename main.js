@@ -80,7 +80,7 @@ sr.reveal(
   .third-section__image, 
   .four-section__image
   .footer-container,
-  .social-media,
+  
   .logo-footer`,
   {
     origin: "left",
@@ -90,7 +90,8 @@ sr.reveal(
 sr.reveal(
   `.third-section, 
   .four-section,
-  .four-section__text 
+  .four-section__text,
+  .social-media 
   `,
   {
     origin: "right",
