@@ -637,6 +637,7 @@ body.dark .four-section__text p {
   background: var(--side-nav);
 }
 footer {
+  margin-top: -20px;
   height: 25%;
 }
 .line {
