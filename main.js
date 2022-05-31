@@ -66,12 +66,12 @@ sr.reveal(
   .first-section__title,
   .first-section__image, 
   .second-section,
-  .third-section__text
+  .third-section__text,
   .social-media`,
 
   {
     origin: "top",
-    interval: 200,
+    interval: 165,
   }
 );
 
@@ -80,7 +80,7 @@ sr.reveal(
   .second-text,
   .second-section__cards,
   .third-section__image, 
-  .four-section__image
+  .four-section__image,
   .footer-container,
   .logo-footer`,
   {
@@ -91,9 +91,7 @@ sr.reveal(
 sr.reveal(
   `.third-section, 
   .four-section,
-  .four-section__text,
-   
-  `,
+  .four-section__text`,
   {
     origin: "right",
   }
