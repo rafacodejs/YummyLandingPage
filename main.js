@@ -71,7 +71,7 @@ sr.reveal(
 
   {
     origin: "top",
-    interval: 250,
+    interval: 500,
   }
 );
 
